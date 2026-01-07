@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CZNS STORE | Official Global Site</title>
+    <style>
+        body, h1, p { margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #000; color: #fff; line-height: 1.6; overflow-x: hidden; }
+        header { position: fixed; top: 0; width: 100%; background: rgba(0, 0, 0, 0.9); display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; box-sizing: border-box; z-index: 1000; border-bottom: 1px solid #333; }
+        .logo img { height: 40px; display: block; }
+        nav a { text-decoration: none; color: #fff; margin-left: 30px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; }
+        .hero-content h1 { font-size: clamp(40px, 8vw, 100px); text-transform: uppercase; letter-spacing: -2px; }
+        .btn-main { display: inline-block; margin-top: 20px; padding: 12px 40px; border: 1px solid white; color: white; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; transition: 0.3s; }
+        .btn-main:hover { background: white; color: black; }
+        .about-us { background: #fff; color: #000; padding: 100px 50px; text-align: center; }
+        .about-content { max-width: 800px; margin: 0 auto; }
+        .about-content h2 { font-size: 32px; text-transform: uppercase; margin-bottom: 20px; }
+        .social-links { margin-top: 40px; }
+        .social-links a { color: #000; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 12px; }
+        footer { padding: 50px; text-align: center; font-size: 10px; color: #666; letter-spacing: 2px; border-top: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="IMG-20250727-WA0021.png" alt="CZNS"></div>
+        <nav>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Support</a>
+            <a href="#" onclick="toggleCart()">Cart (0)</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CZNS YOUTH</h1>
+            <p style="letter-spacing: 5px;">WORLDWIDE SS/26</p>
+            <a href="shop.html" class="btn-main">View Collection</a>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="about-content">
+            <h2>Our Manifesto</h2>
+            <p><strong>CZNS STORE</strong> is the uniform for the architects of tomorrow. We bridge the gap between luxury minimalist design and the raw energy of youth culture. Every piece is crafted to empower self-expression, designed globally for the boys and girls who define the next generation.</p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <span>|</span>
+                <a href="https://tiktok.com" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy; 2026 CZNS STORE WORLDWIDE.</footer>
+
+    <div id="cartOverlay" style="position: fixed; top: 0; right: -100%; width: 350px; height: 100%; background: #fff; color: #000; z-index: 2000; transition: 0.4s; padding: 40px; box-sizing: border-box; box-shadow: -10px 0 30px rgba(0,0,0,0.2);">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+            <h2 style="font-size: 16px; text-transform: uppercase;">Your Bag</h2>
+            <button onclick="toggleCart()" style="background:none; border:none; cursor:pointer; font-size: 20px;">&times;</button>
+        </div>
+        <p style="margin-top: 40px; font-size: 14px; color: #888;">Your bag is currently empty.</p>
+    </div>
+
+    <script>
+        function toggleCart() {
+            const cart = document.getElementById('cartOverlay');
+            cart.style.right = cart.style.right === '0px' ? '-100%' : '0px';
+        }
+    </script>
+</body>
+</html>
