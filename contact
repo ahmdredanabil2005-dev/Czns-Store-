@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | CZNS STORE</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 0; background: #fff; color: #000; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid #eee; }
+        .logo img { height: 35px; }
+        .content { max-width: 600px; margin: 100px auto; text-align: center; }
+        h1 { text-transform: uppercase; letter-spacing: 2px; }
+        .social-box { margin-top: 50px; display: flex; justify-content: center; gap: 30px; }
+        .social-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 2px solid #000; }
+        table { width: 100%; margin-top: 50px; border-collapse: collapse; font-size: 13px; }
+        th, td { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="IMG-20250727-WA0021.png" alt="CZNS"></a></div>
+        <nav><a href="index.html">Home</a><a href="shop.html">Shop</a></nav>
+    </header>
+
+    <div class="content">
+        <h1>Global Support</h1>
+        <p>For inquiries regarding orders, collaborations, or sizing.</p>
+        
+        <table>
+            <tr><th>Region</th><th>Shipping Time</th></tr>
+            <tr><td>Domestic</td><td>2-3 Business Days</td></tr>
+            <tr><td>International</td><td>5-9 Business Days</td></tr>
+        </table>
+
+        <div class="social-box">
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://tiktok.com">TikTok</a>
+        </div>
+        <p style="margin-top: 40px; font-size: 12px; color: #999;">Email: care@cznsstore.com</p>
+    </div>
+</body>
+</html>
