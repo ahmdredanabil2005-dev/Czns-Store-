@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | CZNS STORE</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 0; background: #fff; color: #000; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid #eee; }
+        .logo img { height: 35px; }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; height: 90vh; }
+        .img-side { background: #f4f4f4; }
+        .img-side img { width: 100%; height: 100%; object-fit: cover; }
+        .info-side { padding: 100px; display: flex; flex-direction: column; justify-content: center; }
+        h1 { font-size: 32px; text-transform: uppercase; margin: 0 0 10px; }
+        .price { font-size: 20px; margin-bottom: 40px; }
+        .size-box { display: flex; gap: 10px; margin-bottom: 40px; }
+        .size { border: 1px solid #ddd; padding: 10px 20px; cursor: pointer; font-size: 12px; }
+        .size:hover { border-color: #000; }
+        .add-btn { background: #000; color: #fff; padding: 20px; border: none; text-transform: uppercase; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="IMG-20250727-WA0021.png" alt="CZNS"></a></div>
+        <nav><a href="shop.html">Back to Shop</a></nav>
+    </header>
+
+    <div class="product-grid">
+        <div class="img-side"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80"></div>
+        <div class="info-side">
+            <span style="color: #888; text-transform: uppercase; font-size: 11px;">Youth / Unisex</span>
+            <h1>Essential Oversized Hoodie</h1>
+            <div class="price">$75.00</div>
+            <p style="font-size: 14px; color: #666; margin-bottom: 30px;">Premium heavy-weight cotton. Designed for a global street silhouette.</p>
+            <div class="size-box">
+                <div class="size">S</div><div class="size">M</div><div class="size">L</div><div class="size">XL</div>
+            </div>
+            <button class="add-btn" onclick="alert('Added to Bag!')">Add to Bag</button>
+        </div>
+    </div>
+</body>
+</html>
